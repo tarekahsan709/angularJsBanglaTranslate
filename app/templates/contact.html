@@ -1,0 +1,102 @@
+<div class="page-header">
+    <h1 translate="Contact.PgTitle">Contact Us</h1>
+</div>
+
+<form class="well form-horizontal" action=" " method="post"  id="contact_form">
+    <fieldset>
+
+        <div class="form-group">
+          <label class="col-md-4 control-label" translate="Contact.fname"></label>  
+          <div class="col-md-4 inputGroupContainer">
+          <div class="input-group">
+          <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+          <input  name="first_name" placeholder="{{ 'Contact.fname-placeholder' | translate }}" class="form-control"  type="text">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-md-4 control-label" translate="Contact.lname"></label> 
+            <div class="col-md-4 inputGroupContainer">
+            <div class="input-group">
+          <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+          <input name="last_name" placeholder="{{ 'Contact.lname-placeholder' | translate }}" class="form-control"  type="text">
+            </div>
+          </div>
+        </div>
+
+               <div class="form-group">
+          <label class="col-md-4 control-label" translate="Contact.email"></label>  
+            <div class="col-md-4 inputGroupContainer">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+          <input name="email" placeholder="{{ 'Contact.email-placeholder' | translate }}" class="form-control"  type="text">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-md-4 control-label" translate="Contact.phone"></label>  
+            <div class="col-md-4 inputGroupContainer">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+          <input name="phone" placeholder="{{ 'Contact.phone-placeholder' | translate }}" class="form-control" type="text">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-md-4 control-label" translate="Contact.add"></label>  
+            <div class="col-md-4 inputGroupContainer">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+          <input name="address" placeholder="{{ 'Contact.add-placeholder' | translate }}" class="form-control" type="text">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group"> 
+          <label class="col-md-4 control-label" translate="Contact.hobby"></label>
+            <div class="col-md-4 selectContainer">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+                <select name="hobbies" class="form-control selectpicker">
+                    <option translate="Contact.hobbies.Movies"></option>
+                    <option translate="Contact.hobbies.Walking"></option>
+                    <option translate="Contact.hobbies.Swimming"></option>
+                    <option translate="Contact.hobbies.Running"></option>
+                </select>
+          </div>
+        </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-md-4 control-label" translate="Contact.web"></label>  
+           <div class="col-md-4 inputGroupContainer">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-globe"></i></span>
+          <input name="website" placeholder="{{ 'Contact.web-placeholder' | translate }}" class="form-control" type="text">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-md-4 control-label" translate="Contact.comment"></label>
+            <div class="col-md-4 inputGroupContainer">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                    <textarea class="form-control" name="comment" placeholder="{{ 'Contact.comment-placeholder' | translate }}"></textarea>
+          </div>
+          </div>
+        </div>
+
+
+        <div class="form-group">
+          <label class="col-md-4 control-label"></label>
+          <div class="col-md-4">
+            <button type="submit" class="btn btn-warning"><span translate="Contact.btn"></span> <span class="glyphicon glyphicon-send"></span></button>
+          </div>
+        </div>
+
+    </fieldset>
+</form>

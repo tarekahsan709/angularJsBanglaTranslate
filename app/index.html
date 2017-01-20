@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html ng-app="TranslateApp">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Angular translate Demo</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
+
+    </head>
+
+    <body>
+
+        <div class="container">
+
+            <div class="header clearfix" data-ng-controller="NavbarController">
+                <nav>
+                    <ul class="nav nav-tabs pull-right">
+                        <li role="presentation" data-ng-class="{'active':getClass('/home')}"><a href="#/home" translate="HomeLink"></a></li>
+                        <li role="presentation" data-ng-class="{'active':getClass('/about')}"><a href="#/about" translate="AboutLink"></a></li>
+                        <li role="presentation" data-ng-class="{'active':getClass('/contact')}"><a href="#/contact" translate="ContactLink"></a></li>
+                        <li class="dropdown">
+                            <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span translate="Sel_lang"></span><span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li>
+                                    <a ng-click="changeLanguage('en-US')" translate="Languages.English"></a>
+                                </li>
+                                <li>
+                                    <a ng-click="changeLanguage('fr-FR')" translate="Languages.French"></a>
+                                </li>
+                                <li>
+                                    <a ng-click="changeLanguage('cn-HK')" translate="Languages.Chinese"></a>
+                                </li>
+                                <li>
+                                    <a ng-click="changeLanguage('bn-IN')" translate="Languages.Bangla"></a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </nav>
+                <h3 class="text-muted" translate="Title"></h3>
+            </div>
+
+            <div ng-view></div>
+            
+
+            <footer class="footer">
+                <p>&copy; 2017 MyCompany, Inc.</p>
+            </footer>
+
+        </div> <!-- /container -->
+
+        <script src="bower_components/jquery/dist/jquery.js"></script>
+        <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="bower_components/angular/angular.js"></script>
+        <script src="bower_components/angular-route/angular-route.js"></script>
+        <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+        <script src="bower_components/angular-translate/angular-translate.js"></script>
+        <script src="bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.js"></script>
+       
+        <script src="js/app.js"></script>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+{
+  "name": "ngtranslate",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Md. Nazmul Ahsan"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/tarekahsan709/angularJsBanglaTranslate",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.1",
+    "angular": "^1.6.1",
+    "angular-route": "^1.6.1",
+    "angular-sanitize": "^1.6.1",
+    "angular-translate": "^2.13.1",
+    "angular-translate-loader-static-files": "^2.13.1"
+  }
+}
